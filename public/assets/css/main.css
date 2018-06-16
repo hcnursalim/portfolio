@@ -13,6 +13,7 @@ html, body {
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -353,7 +354,7 @@ section .content {
 
 .project {
   padding: 15px;
-  border-radius: 6px; 
+  border-radius: 6px;
   margin-bottom: 20px;
   box-shadow: 0 5px 43px 0 rgba(0, 0, 0, .1);
 }
