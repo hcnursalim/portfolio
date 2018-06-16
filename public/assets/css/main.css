@@ -304,16 +304,124 @@ section .content {
   text-align: center;
 }
 
-.calltoaction-btn {
-  display: inline-block;
-  width: 120px;
-  visibility: visible;
+.left {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100vh;
 }
 
-@media screen and (max-width: 768px) {
-  .calltoaction-btn {
-    position: fixed;
-    top: 5px;
-    right: 3%;
-  }
+.left .img-bg-cover {
+  width: 100%;
+  height: calc( 100% - 100px );
+}
+
+.left .left-text {
+  height: 100px;
+  width: 100%;
+  background-color: #89D3D5;
+  padding: 15px;
+}
+
+.left .left-text h1 {
+  color: #fff;
+  font-size: 35px;
+  margin-top: -45px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+}
+
+.left .left-text h2 {
+  font-size: 15px;
+  color: #24282F;
+}
+
+.right {
+  width: 50%;
+  margin: 0 0 0 auto;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.content {
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+}
+
+.project {
+  padding: 15px;
+  border-radius: 6px; 
+  margin-bottom: 20px;
+  box-shadow: 0 5px 43px 0 rgba(0, 0, 0, .1);
+}
+
+.project .img-bg-cover {
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+}
+
+.project .text {
+  margin-top: 10px;
+  color: #24282F;
+  text-align: left;
+}
+
+.more-btn {
+  width: 100px;
+  line-height: 25px;
+  font-size: 15px;
+  margin: 0 0 0 auto;
+  color: rgba(0, 0, 0, 1);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 1);
+  margin-top: 20px;
+  opacity: .4;
+  transition: 0.3s ease;
+}
+
+.more-btn:hover {
+  opacity: 1;
+  background-color: #000;
+  color: #fff;
+}
+
+.project .text .title {
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+
+.project .text .description {
+  color: #69707D;
+}
+
+#nav {
+  position: fixed;
+  width: 50%;
+  right: 0;
+  padding: 0 20px;
+  top: 0;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #fff;
+  height: 50px;
+  align-items: center;
+  z-index: 3;
+}
+
+#nav a {
+  opacity: 0.5;
+  display: block;
+  width: 80px;
+  flex: 0 0 80px;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 5px;
+}
+
+#nav a.active {
+  box-shadow: 0 2px 0 0 #89D3D5;
+  opacity: 1;
 }
